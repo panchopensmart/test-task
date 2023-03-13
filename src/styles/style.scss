@@ -1,0 +1,87 @@
+
+body {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.header {
+  height: 165px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__info {
+  display: flex;
+  background-color: red;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header__number{
+  display: flex;
+  width: 280px;
+  height: 61px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__icon-tel {
+  width: 22px;
+  height: 21px;
+}
+
+.main-info__exit-button {
+  display: flex;
+}
+
+.main-info__exit-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-info__exit-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #616161;
+}
+
+.main-info__title {
+  font-family: 'Prosto One', cursive;
+  font-size: 64px;
+  margin-bottom: 12px;
+}
+
+.main-info__address-label {
+  font-family: 'Open Sans', sans-serif;
+  color: #222222;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 12px;
+  opacity: 50%;
+}
+
+.main-info__address-title {
+  width: 350px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+
+
+
+
+

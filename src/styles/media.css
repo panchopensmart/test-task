@@ -1,5 +1,47 @@
 /*main media*/
-@media (max-width: 768px) {
+@media (max-width: 1700px) {
+    .header__info {
+        display: flex;
+        justify-content: end;
+    }
+    .header__menu {
+        display: none;
+    }
+
+    .header__number {
+        display: none;
+    }
+    .header__mobile-menu {
+        display: block;
+    }
+
+    .main-info {
+        margin-top: 60px;
+    }
+
+    .main-info__address{
+        display: none;
+    }
+
+    .bottom-block {
+        padding: 0;
+    }
+
+    .bottom-block__left-block img {
+        display: none;
+    }
+
+    .bottom-block__part-price {
+        display: none;
+    }
+
+    .bottom-block__right-block {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 991px){
     body {
         padding: 0 30px;
     }
@@ -41,9 +83,10 @@
     }
 
     .bottom-block__left-block {
-        flex-flow: wrap;
-        padding-bottom: 24px;
+        display: grid;
+        grid-template-columns: 1fr 200px 39px;
         border-bottom: 1px solid lightgray ;
+        padding-bottom: 24px;
     }
 
     .bottom-block__left-block img {
@@ -59,6 +102,7 @@
     }
 
     .bottom-block__full-price {
+        justify-self: start;
         order: 0;
     }
 
@@ -91,10 +135,11 @@
     }
 
     .bottom-block__full-price {
-        margin-right: 240px;
     }
 
     .bottom-block__right-block {
+        flex-direction: row;
+        justify-content: space-between;
         padding-top: 24px;
         width: 100%;
     }
@@ -105,7 +150,7 @@
 }
 
 
-@media (max-width: 360px) { /*TODO сделать чтобы размер слайдера менялся с кажым размером 400 500 ...*/
+@media (min-width: 358px) and (max-width: 575px){
     body {
         padding: 0;
     }
@@ -138,9 +183,7 @@
     }
 
     .slider {
-        margin-top: 140px;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-top: 150px;
         width: 329px;
         height: 183px;
     }
@@ -153,14 +196,17 @@
     }
 
     .bottom-block {
-        padding: 16px 16px 0px 16px;
+        padding: 16px 16px 0 16px;
         box-shadow: none;
-        border-radius: 0px;
+        border-radius: 0;
     }
 
     .bottom-block__left-block {
         display: grid;
         grid-template-areas: 'price price price' 'square part-price floor';
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        padding-bottom: 12px;
     }
     .bottom-block__part-price {
         display: block;
@@ -170,14 +216,21 @@
         margin: 0;
         grid-area: price;
         order: 0;
+        padding-bottom: 12px;
+        border-bottom: 1px solid lightgray ;
+        justify-self: stretch;
     }
 
     .bottom-block__part-price {
         grid-area: part-price;
         order: 2;
+        display: flex;
+        align-items: center;
     }
 
+
     .bottom-block__square {
+
         grid-area: square;
         order: 1;
     }
@@ -190,7 +243,6 @@
     .bottom-block__right-block {
         flex-direction: column;
         font-size: 14px;
-
     }
 
     .bottom-block__full-name {
@@ -201,5 +253,26 @@
 
     .bottom-block__number {
         width: 100%;
+    }
+
+    .bottom-block__square-number,
+    .bottom-block__floor-number,
+    .bottom-block__part-price-number {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .bottom-block__square,
+    .bottom-block__floor,
+    .bottom-block__part-price {
+        margin-top: 12px;
+    }
+
+    .bottom-block__right-block {
+        padding-top: 25px;
+    }
+
+    .bottom-block__full-name {
+        padding-bottom: 8px;
     }
 }

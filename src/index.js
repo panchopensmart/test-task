@@ -6,6 +6,7 @@ import iconTel from './images/icons/iconTel.png'
 import exit from './images/icons/exit.png'
 import map from './images/map.png'
 import share from './images/icons/share.png'
+import iconMenu from './images/icons/iconMenu.png'
 import image0 from './images/image 12.png'
 import image1 from './images/image 20.png'
 import image2 from './images/image 21.png'
@@ -24,6 +25,7 @@ document.querySelector('.bottom-block__number img').src = iconTel
 document.querySelector('.main-info__exit-icon img').src = exit
 document.querySelector('.bottom-block__left-block img').src = map
 document.querySelector('.bottom-block__full-price-number img').src = share
+document.querySelector('.header__mobile-menu img').src = iconMenu
 
 let dataImages = [image0, image1, image2, image3, image4, image5 , image6, image7, image8]
 let arrSlides = document.querySelectorAll('.swiper-slide img')

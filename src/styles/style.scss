@@ -18,6 +18,10 @@ body {
   justify-content: space-between;
 }
 
+.header__logo {
+  z-index: 12;
+}
+
 .header__menu {
   display: flex;
   justify-content: center;
@@ -56,7 +60,6 @@ body {
 
 .header__mobile-menu {
   display: none;
-
 }
 
 .header__icon-tel {
@@ -123,8 +126,6 @@ body {
   width: 720px;
   height: 368px;
   margin: 248px auto 80px ;
-
-  /* TODO сделать стрелки под слайдером как на макете */
 }
 
 .swiper {
@@ -270,6 +271,13 @@ body {
   margin-right: 16px;
 }
 
+.sidepanel .bottom-block__number {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+
+}
+
 .header__mobile-menu button{
   padding: 0;
   border: none;
@@ -278,7 +286,6 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
-
 
 .sidepanel {
   height: 100%;
@@ -290,27 +297,30 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
   padding-top: 60px;
-  font-size: 16px;
-  font-family: 'Prosto One', cursive;
   transition: 0.5s;
 }
 
-/* Боковая панель ссылок */
 .sidepanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 16px;
+  font-family: 'Prosto One', cursive;
+  color: #000000;
   display: block;
   transition: 0.3s;
 }
 
-/* При наведении курсора мыши на навигационные ссылки измените их цвет */
-.sidepanel a:hover {
-  color: #f1f1f1;
+.sidepanel__points {
+  padding: 16px;
+  margin-top: 60px;
 }
 
-/* Положение и стиль кнопки закрытия (верхний правый угол) */
+.sidepanel__points a {
+  padding-bottom: 12px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid lightgrey;
+}
+
 .sidepanel .closebtn {
   position: absolute;
   top: 0;

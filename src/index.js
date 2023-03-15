@@ -37,3 +37,4 @@ for (const arrSlide of arrSlides) {
     arrSlide.src = dataImages[i]
     i++
 }
+

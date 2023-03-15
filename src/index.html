@@ -9,6 +9,15 @@
 </head>
 <body>
     <header class="header">
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
         <div class="header__logo">
             <img src="" alt="logo">
         </div>
@@ -24,7 +33,13 @@
             </div>
         </div>
         <div class="header__mobile-menu">
-            <img src="" alt="">
+            <button onclick="openNav()"><img src="./images/icons/iconMenu.png" alt="icon"></button>
+        </div>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">О Компании</a>
+            <a href="#">Проекты</a>
+            <a href="#">Контакты</a>
         </div>
     </header>
     <!-- информация о квартире -->

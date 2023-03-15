@@ -122,7 +122,7 @@ body {
 .slider {
   width: 720px;
   height: 368px;
-  margin: 205px auto 80px ;
+  margin: 248px auto 80px ;
 
   /* TODO сделать стрелки под слайдером как на макете */
 }
@@ -260,6 +260,7 @@ body {
   width: 267px;
   height: 56px;
   color: #fff;
+  color: #fff;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
@@ -267,7 +268,60 @@ body {
 
 .bottom-block__number img {
   margin-right: 16px;
+}
 
+.header__mobile-menu button{
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.sidepanel {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  font-size: 16px;
+  font-family: 'Prosto One', cursive;
+  transition: 0.5s;
+}
+
+/* Боковая панель ссылок */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* При наведении курсора мыши на навигационные ссылки измените их цвет */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Положение и стиль кнопки закрытия (верхний правый угол) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.openbtn:hover {
+  background-color: #444;
 }
 
 
